@@ -9,3 +9,6 @@ def posts(request):
 
 def post_name(request, post):
     return HttpResponse(f'Информация о посте {post}')
+
+def post_name_int(request, post_number):
+    return HttpResponse(f'Здесь содержится информация о посте под номером {post_number}')
