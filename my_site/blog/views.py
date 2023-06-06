@@ -6,3 +6,6 @@ def home(request):
 
 def posts(request):
     return HttpResponse('Все посты блога')
+
+def post_name(request, post):
+    return HttpResponse(f'Информация о посте {post}')
